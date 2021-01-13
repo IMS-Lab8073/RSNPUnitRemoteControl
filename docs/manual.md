@@ -21,7 +21,8 @@ E-mail:md20024@shibaura-it.ac.jp
 ## 1. はじめに  
 
 汎用ユニット(以下，「RSNPユニット」と記載)を，多種多様なロボットやデバイスに外付けで接続することで，取得したデータをRSNP(Robot Serivice Networking Protocol)通信でインターネット経由でサーバにアップロードして蓄積し，Webブラウザ等のGUI上で各ロボットの状態を管理，監視することができる．以下の図のようにRSNPユニットをロボットやデバイスに接続して使用することが可能である．  
-![概要図](https://user-images.githubusercontent.com/46204057/104468815-3c321700-55fb-11eb-9f7b-5befc4f6a554.png)
+
+<img src="https://user-images.githubusercontent.com/46204057/104468815-3c321700-55fb-11eb-9f7b-5befc4f6a554.png"  width="60%">
 
 ## 2. ユニット使用方法  
 ### 2.1 WiFiの設定  
@@ -103,7 +104,6 @@ $ pip3 install paho-mqtt
 ```
 
 なお，ROSを使用する場合，ROSのプログラムは**Python2**ですが，デバッグ用プログラムなどは**Python3**で動作させているので注意してください．  
-なお，ROSを使用する場合，ROSのプログラムは**Python2**ですが，デバッグ用プログラムなどは**Python3**で動作させているので注意してください．  
 
 #### 3.1.1 RTMを使う場合
 本リポジトリにある  
@@ -151,7 +151,7 @@ $ python sampleMQTT.py
 RSNPユニット内にある，[デバッグ用プログラム](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/tree/main/debug)で動作を確認することができます．  
 イメージは以下になります．  
 
-![](https://user-images.githubusercontent.com/46204057/104475528-8d91d480-5602-11eb-8272-3760c6bd45a0.png)
+<img src="https://user-images.githubusercontent.com/46204057/104475528-8d91d480-5602-11eb-8272-3760c6bd45a0.png" width="60%">
 
 | Pub/Sub | ファイル名 |用途 |
 |:-:|:-:|:-:|
