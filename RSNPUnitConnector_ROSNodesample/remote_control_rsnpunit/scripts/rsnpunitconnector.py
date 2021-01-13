@@ -36,6 +36,7 @@ class testNode():
         e = euler_from_quaternion(q)
         odom_theta = e[2] 
         # rospy.loginfo("Odomery: x=%s y=%s theta=%s", odom_x, odom_y, odom_theta)
+        
         # set odom data
         send_data = {"data_type":"odometry", "data":""}
         send_data["data"] = "x:"+str(odom_x)+",y:"+str(odom_y)+",heading"+str(odom_theta)
@@ -45,8 +46,11 @@ class testNode():
 
     def mqttcallback(self):
         # mqtt callback
+        # data format : {"robotID":"", "vx":"", "va":"", "option":"", "timestamp":""}
         recievedata =  self.mqttc.recieve_data
         recievedata = json.loads(recievedata)
+        
+        # set cmd_vel
         cmd_vel = Twist()
         cmd_vel.linear.x = float(recievedata["vx"])  / 1000
         cmd_vel.angular.z = float(recievedata["va"]) / 1000
@@ -63,7 +67,5 @@ if __name__ == '__main__':
     node = testNode()
 
     while not rospy.is_shutdown():
-        # print("run in while")
-        if node.mqttc.isNew(): 
-            node.mqttcallback()
+        if node.mqttc.isNew(): node.mqttcallback()
         rospy.sleep(0.01)

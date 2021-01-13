@@ -208,6 +208,8 @@ class RSNPUnitConnector(OpenRTM_aist.DataFlowComponentBase):
 	#
 	#
 	def onExecute(self, ec_id):
+		# MQTT subscribe data
+		# data format : {"robotID":"", "vx":"", "va":"", "option":"", "timestamp":""}
 		if self.mqttc.isNew():
 			if self.mqttc.recieve_data=="NoData":
 				self._d_velocityOut.data.vx = 0
@@ -225,6 +227,7 @@ class RSNPUnitConnector(OpenRTM_aist.DataFlowComponentBase):
 				self._d_velocityOut.data.vy = 0
 				self._velocityOutOut.write()
 
+		# MQTT publish data
 		send_data_dict = {"data_type":"","data":""}
 
 		if self._stringInIn.isNew():
