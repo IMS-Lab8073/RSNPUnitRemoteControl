@@ -20,13 +20,13 @@ while True:
     input_data = input(">")
 
     if input_data=="1":
-        send_data["vx"] = 500
+        send_data["vx"] = "500"
     elif input_data=="2":
-        send_data["vx"] = -500
+        send_data["vx"] = "-500"
     elif input_data=="3":
-        send_data["va"] = 500
+        send_data["va"] = "500"
     elif input_data=="4":
-        send_data["va"] = -500
+        send_data["va"] = "-500"
     elif input_data=="5":
         send_data["option"] = "A"
     elif input_data=="6":

@@ -12,4 +12,4 @@ def print_msg(client, userdata, message):
         print(e)
 
 while True:
-    subscribe.callback(print_msg, "toUnit/RobotData", hostname="localhost")
+    subscribe.callback(print_msg, "toUnit/Robotdata", hostname="localhost")
