@@ -2,12 +2,12 @@
 
 <h4> 芝浦工業大学 知能機械システム研究室　加藤宏一朗，松日楽　信人</h4>
 
-2020/01/27 開催のRSNP遠隔操作デモンストレーション用ソフトウェアです．
+2020/01/27 開催のロボットフォーラムで行われる，RSNP遠隔操作デモンストレーション用ソフトウェアページです．  
 
-マニュアルは以下です．
+マニュアルは以下になります． 
 
- - [デモ内容](https://ims-lab8073.github.io/RSNPTutorial2020/)
- - [事前セッティング方法](https://ims-lab8073.github.io/RSNPTutorial2020/Setting)
+ - [マニュアル](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/manual.md)
+ - [ロボットフォーラムの案内](https://www.shibaura-it.ac.jp/event/nid00001421.html)
 
 
 ~~~text  
