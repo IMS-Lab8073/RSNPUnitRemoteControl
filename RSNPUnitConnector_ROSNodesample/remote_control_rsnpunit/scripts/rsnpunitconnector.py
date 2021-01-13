@@ -41,7 +41,7 @@ class testNode():
         send_data["data"] = "x:"+str(odom_x)+",y:"+str(odom_y)+",heading"+str(odom_theta)
         send_data_json = json.dumps(send_data)
         # MQTT publish
-        self.mqttc.publish_message(self.hostname, "toUnit/RobotData", send_data_json)
+        self.mqttc.publish_message(self.hostname, "toUnit/Robotdata", send_data_json)
 
     def mqttcallback(self):
         # mqtt callback
