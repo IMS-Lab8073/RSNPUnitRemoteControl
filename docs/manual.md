@@ -45,7 +45,7 @@ E-mail:md20024@shibaura-it.ac.jp
 
 ## 2. ユニット使用方法  
 
-**配布したユニット以外のユニットを使用する場合，[こちら]()から各種設定を済ませてください．**  
+**配布したユニット以外のユニットを使用する場合，[こちら](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/RaspiSetup.md)から各種設定を済ませてください．**  
 
 ### 2.1 WiFiの設定  
 電源投入から接続，WiFiの設定は[こちら](https://ims-lab8073.github.io/RSNPTutorial2020/Setting)に詳細な記載があります．**2.1から2.5まで**を参照ください．  
@@ -143,8 +143,8 @@ $ python debug_subscriber.py
 
 
 ## 3. ユニット通信用サンプルプログラム使用方法
-ユニットとロボットとの通信方法を示します．通信方法はMQTTであり，MQTTブローカーおよびトピック名は2.2のコンフィグレーションに示す通りです．  
-デフォルトは以下になります．  
+ユニットとロボットとの通信方法を示します．通信方法はMQTTであり，MQTTブローカーおよびトピック名は2.2のコンフィグレーションに示す通りです．通信データ内容は[こちら](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/Specification.md)になります．  
+デフォルトは以下になります．    
 
 | 項目 | コンフィグレーション名 | デフォルト値 | 説明 |
 |:-:|:-:|:-:|:-:|
