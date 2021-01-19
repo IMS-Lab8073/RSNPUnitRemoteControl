@@ -20,6 +20,7 @@
 | count | 特定のモーション(あいさつなど)のカウント(数字のみ) | 3 |
 | other | 上記以外 | 任意の文字列 |
 
+※オドメトリ情報の場合，サンプルプログラム([RTM RTC](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/tree/main/RSNPUnitConnector_RTCsample/RSNPUnitConnector)/[ROS Node](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/tree/main/RSNPUnitConnector_ROSNodesample/remote_control_rsnpunit))にある通り，RTMでは[TimedPose2D](https://openrtm.org/doc/idl/1.1/idlreference_ja/structRTC_1_1TimedPose2D.html#a5daf2ba8f444487228f826c280521950)の，`position.x`,`position.y`,`heading`を，ROSでは[nav_msgs/Odomtry.msg](http://docs.ros.org/en/noetic/api/nav_msgs/html/msg/Odometry.html)の，`pose.pose.position.x`,`pose.pose.position.y`，`tf`を用いたロボットの向きを使用します．
 
 ### 1.2 ユニットからサーバ(RSNP)
 RSNPユニット(またはユニット内部のソフトウェア)は，サーバに以下のデータを送信します．  
