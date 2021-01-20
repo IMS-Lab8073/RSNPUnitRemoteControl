@@ -9,6 +9,12 @@ $ cd ~/
 $ git clone https://github.com/IMS-Lab8073/RSNPUnitRemoteControl
 ```
 
+### libjpeg8のインストール
+カメラクライアントを立ち上げるため，以下のコマンドを実行してください．  
+```shell
+$ sudo apt-get install libjpeg8
+```
+
 ### mosquittoのインストール
 MQTTのブローカーをインストールします．  
 
