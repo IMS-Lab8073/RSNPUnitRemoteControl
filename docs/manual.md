@@ -34,6 +34,7 @@ E-mail:md20024@shibaura-it.ac.jp
             - [RTMを使う場合](#rtm%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88)
             - [ROSを使う場合](#ros%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88)
             - [ロボットミドルウェアを使わない場合](#%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%83%9F%E3%83%89%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88)
+    - [操作画面からロボットを操作する](#%E6%93%8D%E4%BD%9C%E7%94%BB%E9%9D%A2%E3%81%8B%E3%82%89%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E6%93%8D%E4%BD%9C%E3%81%99%E3%82%8B)
 
 <!-- /TOC -->
 
@@ -206,3 +207,16 @@ rc = mqttc.run("localhost","fromServer/Velocity")
 ```shell
 $ python sampleMQTT.py
 ```
+
+## 4. 操作画面からロボットを操作する  
+操作画面のURLは以下です．  
+http://zmini.robo.meo.shibaura-it.ac.jp:8080/RemoteControlSystem/network  
+
+操作画面は以下のようになっていて，
+<img src="https://user-images.githubusercontent.com/46204057/105194023-84fa4a80-5b7c-11eb-9120-fb4348ad95c4.png" width="80%">
+
+ロボットの画像を選択すると以下のようにポップアップが表示されます．  
+<img src="https://user-images.githubusercontent.com/46204057/105194255-bbd06080-5b7c-11eb-85ca-589f5426b153.png" width="80%">
+
+操作画面に移動後，カメラ配信をオンにするとカメラ画像が，ロボット操作をオンにすると矢印キーまたはA~Eのボタンでの移動が可能になります．  
+<img src="https://user-images.githubusercontent.com/46204057/105197045-91cc6d80-5b7f-11eb-8d9c-425035352798.png" width="80%">
