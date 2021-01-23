@@ -1,4 +1,4 @@
-# RSNPUitRemoteControl
+# RSNPUnitRemoteControl
 
 <h4> 芝浦工業大学 知能機械システム研究室　加藤宏一朗，松日楽　信人</h4>
 
