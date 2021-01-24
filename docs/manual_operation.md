@@ -16,8 +16,5 @@
 | 待機中 | 接続されています | 可能 |
 | 使用中 | 接続されています | 不可 |
 
-<img src="https://user-images.githubusercontent.com/46204057/105623339-515d4000-5e5c-11eb-8b21-5a81cf3d90af.png" width="30%">
-
-<img src="https://user-images.githubusercontent.com/46204057/105623252-bfedce00-5e5b-11eb-85c8-f974e3e97d8b.png" width="30%">
-<img src="https://user-images.githubusercontent.com/46204057/105623274-dac04280-5e5b-11eb-8014-f761345f2f60.png" width="30%">
+<img src="https://user-images.githubusercontent.com/46204057/105623339-515d4000-5e5c-11eb-8b21-5a81cf3d90af.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105623252-bfedce00-5e5b-11eb-85c8-f974e3e97d8b.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105623274-dac04280-5e5b-11eb-8014-f761345f2f60.png" width="30%">
 
