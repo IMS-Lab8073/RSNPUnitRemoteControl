@@ -2,12 +2,45 @@
 
 <h4> 芝浦工業大学 知能機械システム研究室　加藤宏一朗，松日楽　信人</h4>
 
-2020/01/27 開催のロボットフォーラムで行われる，RSNP遠隔操作デモンストレーション用ソフトウェアページです．  
+2021/01/27 開催のロボットフォーラムで行われる，RSNP遠隔操作デモンストレーション用ソフトウェアページです．  
 
-マニュアルは以下になります． 
+## [ロボットフォーラムの案内ページ](https://www.shibaura-it.ac.jp/event/nid00001421.html)
 
- - [マニュアル](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/manual.md)
- - [ロボットフォーラムの案内](https://www.shibaura-it.ac.jp/event/nid00001421.html)
+## マニュアル/環境について
+### マニュアルおよび仕様書について
+
+以下のマニュアルを用意しています．  
+ - [RSNPユニット操作方法](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/manual.md)
+ - [操作画面マニュアル](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/manual_operation.md)
+ - [Raspberry Piセットアップマニュアル](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/RaspiSetup.md)
+ - [データ仕様](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/Specification.md)
+
+### ユニットの環境
+
+| 項目 | バージョン |
+|:-:|:-:|
+| Linux OS | Rasbian Buster |
+| RSNP LIB | rsnp-robot-api-2.3.0<br>rsnp-fjlib-api-2.3.0 |
+| Java VM | jdk-1.8.0 |
+
+※Ubuntuにも対応しています．必要であれば別途ご連絡ください．  
+
+### 開発環境
+#### RSNPクライアント/RTM RTC開発
+Java，RSNP LIBのバージョンはユニットと同様です．  
+
+| 項目 | バージョン |
+|:-:|:-:|
+| OS | Windows 10 |
+| OpenRTM | 1.2.0 |
+| Python | 2.7/3.7 |
+
+#### ROSパッケージ開発
+
+| 項目 | バージョン |
+|:-:|:-:|
+| Linux OS | Ubuntu 16.04 LTS |
+| ROS | Kinetic |
 
 
 ~~~text  
