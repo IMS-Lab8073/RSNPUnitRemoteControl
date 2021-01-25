@@ -1,0 +1,54 @@
+# RSNPUnitConnector CMake config file
+#
+# This file sets the following variables:
+# RSNPUnitConnector_FOUND - Always TRUE.
+# RSNPUnitConnector_INCLUDE_DIRS - Directories containing the RSNPUnitConnector include files.
+# RSNPUnitConnector_IDL_DIRS - Directories containing the RSNPUnitConnector IDL files.
+# RSNPUnitConnector_LIBRARIES - Libraries needed to use RSNPUnitConnector.
+# RSNPUnitConnector_DEFINITIONS - Compiler flags for RSNPUnitConnector.
+# RSNPUnitConnector_VERSION - The version of RSNPUnitConnector found.
+# RSNPUnitConnector_VERSION_MAJOR - The major version of RSNPUnitConnector found.
+# RSNPUnitConnector_VERSION_MINOR - The minor version of RSNPUnitConnector found.
+# RSNPUnitConnector_VERSION_REVISION - The revision version of RSNPUnitConnector found.
+# RSNPUnitConnector_VERSION_CANDIDATE - The candidate version of RSNPUnitConnector found.
+
+message(STATUS "Found RSNPUnitConnector-@PROJECT_VERSION@")
+set(RSNPUnitConnector_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(RSNPUnitConnector_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(RSNPUnitConnector_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(RSNPUnitConnector_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(RSNPUnitConnector_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(RSNPUnitConnector_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(RSNPUnitConnector_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(RSNPUnitConnector_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(RSNPUnitConnector_VERSION @PROJECT_VERSION@)
+set(RSNPUnitConnector_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(RSNPUnitConnector_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(RSNPUnitConnector_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(RSNPUnitConnector_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+
