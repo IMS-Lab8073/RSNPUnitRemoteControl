@@ -84,9 +84,9 @@ RSNP接続をする場合，以下にしたがって下さい．RSNP接続を行
 RSNPクライアントの実行のコンフィグレーションパラメータを設定しているファイルです．  
 以下のコマンドで編集することができます．  
 
-```
-cd ~/RSNPUnitRemoteControl
-sudo nano Config/Config.properties
+```shell
+$ cd ~/RSNPUnitRemoteControl
+$ sudo nano Config/Config.properties
 ```
 
 デフォルトでは以下のようになっています．  
@@ -136,7 +136,7 @@ RSNPユニット内にある，[デバッグ用プログラム](https://github.c
 
 publisherとsubscriber，それぞれ，以下のコマンドで実行することができます．  
 ```shell
-$ cd ~/RSNPUnitRemoteControl
+$ cd ~/RSNPUnitRemoteControl/debug
 ```
 
 publisher  
@@ -216,16 +216,15 @@ $ python sampleMQTT.py
 ```
 
 ## 4. 操作画面からロボットを操作する  
-操作画面のURLは以下です．  
+操作画面のURLは以下です．操作方法の詳細については[こちら](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/docs/manual_operation.md)  
+  
 http://zmini.robo.meo.shibaura-it.ac.jp:8080/RemoteControlSystem/network  
 
 操作画面は以下のようになっていて，
 <img src="https://user-images.githubusercontent.com/46204057/105194023-84fa4a80-5b7c-11eb-9120-fb4348ad95c4.png" width="80%">
 
 ロボットの画像を選択すると以下のようにポップアップが表示されます．  
-<img src="https://user-images.githubusercontent.com/46204057/105194255-bbd06080-5b7c-11eb-85ca-589f5426b153.png" width="80%">
+<img src="https://user-images.githubusercontent.com/46204057/105657459-c20d6680-5f07-11eb-82ee-322ca60cc372.png" width="80%">
 
 操作画面に移動後，カメラ配信をオンにするとカメラ画像が，ロボット操作をオンにすると矢印キーまたはA~Eのボタンでの移動が可能になります．  
 <img src="https://user-images.githubusercontent.com/46204057/105197045-91cc6d80-5b7f-11eb-8d9c-425035352798.png" width="80%">
-
-詳細は[こちら]()を参照してください．  
