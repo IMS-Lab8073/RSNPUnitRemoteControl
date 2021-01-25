@@ -11,12 +11,12 @@
 ロボットの状態は以下の3パターンです．状態に関わらず、ロボットの操作画面には遷移することができます．    
 
 | 状態 | サーバへの接続状態 | 操作 | カメラ画像の確認 |
-|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 | 停止中 | 接続されていません | 不可 | 不可 |
 | 待機中 | 接続されています | 可能 | 可能 |
 | 使用中 | 接続されています | 不可 | 可能 |
 
-<img src="https://user-images.githubusercontent.com/46204057/105657097-051b0a00-5f07-11eb-97c6-32d5928c1013.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105657100-06e4cd80-5f07-11eb-9129-e1071c08a6b9.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105657110-0ba98180-5f07-11eb-9376-7ac4f7c80b7a.png" width="30%">
+<img src="https://user-images.githubusercontent.com/46204057/105658273-883d5f80-5f09-11eb-8359-804525c0a2fa.png" width="90%">
 
 
 ## 全体画面 - ポップアップ画面
