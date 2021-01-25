@@ -40,7 +40,7 @@ E-mail:md20024@shibaura-it.ac.jp
 
 ## 1.はじめに  
 
-汎用ユニット(以下，「RSNPユニット」と記載)を，多種多様なロボットやデバイスに外付けで接続することで，取得したデータをRSNP(Robot Serivice Networking Protocol)通信でインターネット経由でサーバにアップロードして蓄積し，Webブラウザ等のGUI上で各ロボットの状態を管理，監視するシステム．以下の図のようにRSNPユニットをロボットやデバイスに接続して使用することが可能である．  
+汎用ユニット(以下，「RSNPユニット」と記載)を，多種多様なロボットやデバイスに外付けで接続することで，取得したデータをRSNP(Robot Serivice Networking Protocol)通信でインターネット経由でサーバにアップロードして蓄積し，Webブラウザ等のGUI上で各ロボットの状態を管理，監視するシステムを開発してきました．今回は，双方向の通信を実現し，以下の図のようにRSNPユニットをロボットやデバイスに接続してインターネット経由で遠隔操作することができます．  
 
 <img src="https://user-images.githubusercontent.com/46204057/104468815-3c321700-55fb-11eb-9f7b-5befc4f6a554.png"  width="60%">
 
@@ -146,7 +146,7 @@ $ python3 debug_publisher.py
 
 subscriber 
 ```shell
-$ python debug_subscriber.py  
+$ python3 debug_subscriber.py  
 ```
 
 
@@ -156,7 +156,7 @@ $ python debug_subscriber.py
 
 | 項目 | コンフィグレーション名 | デフォルト値 | 説明 |
 |:-:|:-:|:-:|:-:|
-| ブローカー | broker | localhost | RSNPユニット内部のブローカーです． |
+| ブローカー | broker | localhost | RSNPユニット内部のブローカーです |
 | トピック | subtopic | toUnit/Robotdata | 遠隔操作用クライアント**が**Subscribeする際に使うトピック名です | 
 | トピック | pubtopic | fromServer/Velocity | 遠隔操作用クライアント**が**Publishする際に使うトピック名です |
 
