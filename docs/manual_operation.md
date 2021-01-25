@@ -8,13 +8,33 @@
 <img src="https://user-images.githubusercontent.com/46204057/105194023-84fa4a80-5b7c-11eb-9120-fb4348ad95c4.png" width="80%">
 
 ### ロボットの状態遷移の表示
-ロボットの状態は以下の3パターンです．  
+ロボットの状態は以下の3パターンです．状態に関わらず、ロボットの操作画面には遷移することができます．    
 
-| 状態 | サーバへの接続状態 | 操作 |
+| 状態 | サーバへの接続状態 | 操作 | カメラ画像の確認 |
+|:-:|:-:|:-:|:-:|:-:|
+| 停止中 | 接続されていません | 不可 | 不可 |
+| 待機中 | 接続されています | 可能 | 可能 |
+| 使用中 | 接続されています | 不可 | 可能 |
+
+<img src="https://user-images.githubusercontent.com/46204057/105657097-051b0a00-5f07-11eb-97c6-32d5928c1013.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105657100-06e4cd80-5f07-11eb-9129-e1071c08a6b9.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105657110-0ba98180-5f07-11eb-9376-7ac4f7c80b7a.png" width="30%">
+
+
+## 全体画面 - ポップアップ画面
+ロボットの画像を選択すると以下のようにポップアップでロボットの説明などが表示されます．ロボットの画像の下の操作ボタンで操作画面に遷移することができます．    
+<img src="https://user-images.githubusercontent.com/46204057/105657459-c20d6680-5f07-11eb-82ee-322ca60cc372.png" width="80%">
+
+## ログイン画面
+操作画面に遷移する際，初めて操作する場合はまずログイン画面が表示されます．お伝えしたIDとパスワードを入力してログインしてください．    
+<img src="https://user-images.githubusercontent.com/46204057/105657583-0e58a680-5f08-11eb-86d3-2270f758cb0d.png" width="80%">
+
+## 操作画面
+操作画面は以下のようになっています．  
+カメラ配信ボタンをオンにするとカメラ画像が表示され，ロボット操作ボタンをオンにするとロボットの操作をすることができます．
+
+| 項目 | 内容 | 説明 |
 |:-:|:-:|:-:|
-| 停止中 | 接続されていません | 不可 |
-| 待機中 | 接続されています | 可能 |
-| 使用中 | 接続されています | 不可 |
+| ① | ロボットの情報 | ロボットの、名前、設置場所、操作方法、状態が表示されます |
+| ② | 操作ボタン | ①に記載された操作方法に応じて十字ボタンまたはA~Eのボタンで操作を行います |
+| ③ | サーバ受信データ | サーバにデータを送信するロボットであれば最新データがここに表示されます |
 
-<img src="https://user-images.githubusercontent.com/46204057/105623339-515d4000-5e5c-11eb-8b21-5a81cf3d90af.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105623252-bfedce00-5e5b-11eb-85c8-f974e3e97d8b.png" width="30%"> <img src="https://user-images.githubusercontent.com/46204057/105623274-dac04280-5e5b-11eb-8014-f761345f2f60.png" width="30%">
-
+<img src="https://user-images.githubusercontent.com/46204057/105657190-30055e00-5f07-11eb-8c33-f934f4305aca.png" width="80%">
