@@ -40,7 +40,7 @@ E-mail:md20024@shibaura-it.ac.jp
 
 ## 1.はじめに  
 
-汎用ユニット(以下，「RSNPユニット」と記載)を，多種多様なロボットやデバイスに外付けで接続することで，取得したデータをRSNP(Robot Serivice Networking Protocol)通信でインターネット経由でサーバにアップロードして蓄積し，Webブラウザ等のGUI上で各ロボットの状態を管理，監視することができる．以下の図のようにRSNPユニットをロボットやデバイスに接続して使用することが可能である．  
+汎用ユニット(以下，「RSNPユニット」と記載)を，多種多様なロボットやデバイスに外付けで接続することで，取得したデータをRSNP(Robot Serivice Networking Protocol)通信でインターネット経由でサーバにアップロードして蓄積し，Webブラウザ等のGUI上で各ロボットの状態を管理，監視するシステム．以下の図のようにRSNPユニットをロボットやデバイスに接続して使用することが可能である．  
 
 <img src="https://user-images.githubusercontent.com/46204057/104468815-3c321700-55fb-11eb-9f7b-5befc4f6a554.png"  width="60%">
 
@@ -81,9 +81,16 @@ network={
 RSNP接続をする場合，以下にしたがって下さい．RSNP接続を行わず，デバッグ用プログラムで動作を確認することもできます．  
 
 #### 2.2.1 コンフィグレーションの設定
+RSNPクライアントの実行のコンフィグレーションパラメータを設定しているファイルです．  
+以下のコマンドで編集することができます．  
 
-デフォルトでは以下のようになっています．
+```
+cd ~/RSNPUnitRemoteControl
+sudo nano Config/Config.properties
+```
 
+デフォルトでは以下のようになっています．  
+`robot_id`をお伝えした文字列に変更してください．  
 ```
 #Configuration
 broker = localhost
@@ -96,8 +103,6 @@ debug = false
 max_fps = 10
 camera_no = 0
 ```
-
-`robot_id`をお伝えした文字列に変更してください．  
 
 #### 2.2.2 カメラ用クライアントを立ち上げる
 
@@ -222,3 +227,5 @@ http://zmini.robo.meo.shibaura-it.ac.jp:8080/RemoteControlSystem/network
 
 操作画面に移動後，カメラ配信をオンにするとカメラ画像が，ロボット操作をオンにすると矢印キーまたはA~Eのボタンでの移動が可能になります．  
 <img src="https://user-images.githubusercontent.com/46204057/105197045-91cc6d80-5b7f-11eb-8d9c-425035352798.png" width="80%">
+
+詳細は[こちら]()を参照してください．  
