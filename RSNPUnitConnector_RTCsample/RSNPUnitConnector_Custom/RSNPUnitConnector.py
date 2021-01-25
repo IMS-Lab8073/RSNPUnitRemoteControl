@@ -249,7 +249,7 @@ class RSNPUnitConnector(OpenRTM_aist.DataFlowComponentBase):
 					listdata = []
 				
 				# write
-				self._doubleSeqOutOut.data = listdata
+				self._d_doubleSeqOut.data = listdata
 				self._doubleSeqOutOut.write()
 
 		# MQTT publish data
