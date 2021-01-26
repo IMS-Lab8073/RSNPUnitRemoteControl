@@ -8,10 +8,10 @@ If you are planning to use this system, please contact us at the following addre
 [Specification of RSNP Unit](https://ims-lab8073.github.io/RSNPTutorial2020/Specification.html)  
 
 ~~~text  
-連絡先：  
-芝浦工業大学 機械機能工学科 知能機械システム研究室  
-〒135-8548 東京都江東区豊洲3-7-5  
-機械工学専攻 修士1年 加藤宏一朗 Koichiro Kato
+Adrress：  
+Shibaura Institute of Technology Intellignet Mechanical Systems Lab  
+〒135-8548 3-7-5 Toyosu Kotoku Tokyo  
+Department of Mechanical Engineering Master 1st Koichiro Kato
 TEL:03-5859-8073
 E-mail:md20024@shibaura-it.ac.jp  
 ~~~  
