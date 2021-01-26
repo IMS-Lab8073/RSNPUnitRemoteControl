@@ -209,8 +209,9 @@ As with the ROS sample, change the following ``"localhost"` part to the hostname
 
 ```python
 mqttc = MQTTClient.MyMQTTClass()
-# start subscribe
-MyMQTTClass() # subscribe rc = mqttc.run("localhost", "fromServer/Velocity")
+
+# start subscribe 
+rc = mqttc.run("localhost", "fromServer/Velocity")
 ````
 
 You can run the following command.   
