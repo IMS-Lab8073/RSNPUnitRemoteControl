@@ -183,20 +183,21 @@ in this repository.
 #### 3.1.2 In case of using ROS
 You can use  
 [`RSNPUnitConnector`](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/tree/main/RSNPUnitConnector_ROSsample)  
-You can use [`RSNPUnitConnector`]() in this repository.  
+in this repository.  
 
-[rsnpunitconnector.py](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/RSNPUnitConnector_ROSNodesample/remote_ control_rsnpunit/scripts/rsnpunitconnector.py), change `self.hostname` to the hostname of the RSNP unit (default is `rsnpunit`) or IP address.  
+In [rsnpunitconnector.py](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/RSNPUnitConnector_ROSNodesample/remote_control_rsnpunit/scripts/rsnpunitconnector.py), change `self.hostname` to the hostname of the RSNP unit (default is `rsnpunit`) or IP address.  
 
-``python
+```python
 class testNode():
     def __init__(self):
         # MQTT Client
         self.hostname = "localhost"
 ````
 
-You can start it with the following command.  
+You can start it with the following command.   
+
 ```shell
-$ rosrun remote_control_rsnpunit rsnpunitconnector.py
+$ rosrun remote_control_rsnpunit rsnpunitconnector.py  
 ```
 
 #### 3.1.3 Without the robot middleware  
@@ -212,7 +213,8 @@ mqttc = MQTTClient.MyMQTTClass()
 MyMQTTClass() # subscribe rc = mqttc.run("localhost", "fromServer/Velocity")
 ````
 
-You can run the following command.  
+You can run the following command.   
+
 ```shell
 $ python sampleMQTT.py
 ```
