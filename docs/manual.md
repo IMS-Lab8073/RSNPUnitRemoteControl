@@ -180,7 +180,7 @@ $ pip3 install paho-mqtt
 
 #### 3.1.2 ROSを使う場合
 本リポジトリにある  
-[`RSNPUnitConnector`](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/tree/main/RSNPUnitConnector_ROSsample)  
+[`RSNPUnitConnector`](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/RSNPUnitConnector_ROSNodesample)  
 を使用することができます．  
 
 [rsnpunitconnector.py](https://github.com/IMS-Lab8073/RSNPUnitRemoteControl/blob/main/RSNPUnitConnector_ROSNodesample/remote_control_rsnpunit/scripts/rsnpunitconnector.py)の，`self.hostname`をRSNPユニットのホスト名(デフォルトは`rsnpunit`)またはIPアドレスに変更してください．  
